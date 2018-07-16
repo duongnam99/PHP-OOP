@@ -15,4 +15,8 @@ Sử dụng: khi muốn định nghĩa sẵn một số phương thức để tu
 
 | Public              | Protected             | Private      
  -------------------- | ----------------------| -----------
-Có thể truy cập tới các phương thức và thuộc tính ở bất cứ đâu, dù trong nộ bộ của lớp hay ở lớp con hay cả bên ngoài lớp đều được | Mức truy cập protected chỉ cho phép truy xuất nội bộ trong lớp đó và lớp kế thừa, riêng ở bên ngoài lớp sẽ không truy xuất đc. Mức protected thường được dùng cho những phương thức và thuộc tính có khả năng bị lớp con định nghĩa lại (overwrite) | Thành phần chỉ dành riêng cho nội bộ của lớp, nghĩa là ta không thể truy xuất tới thành phần private ở lớp con hoặc ở bên ngoài lớp.
+Có thể truy cập tới các phương thức và thuộc tính ở bất cứ đâu, trong nội bộ của lớp hay ở lớp con hay cả bên ngoài lớp đều được | Mức truy cập protected chỉ cho phép truy xuất nội bộ trong lớp đó và lớp kế thừa, riêng ở bên ngoài lớp sẽ không truy xuất đc. Mức protected thường được dùng cho những phương thức và thuộc tính có khả năng bị lớp con định nghĩa lại (overwrite) | Thành phần chỉ dành riêng cho nội bộ của lớp, nghĩa là ta không thể truy xuất tới thành phần private ở lớp con hoặc ở bên ngoài lớp.
+
+## Từ khóa final 
+- Lớp final: lớp cuối cùng, không một lớp nào có thể kế thừa, chỉ được gọi để sử dụng ,không thể Override
+- Hàm final: tương tự, không thể Override 
